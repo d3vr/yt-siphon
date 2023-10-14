@@ -3,11 +3,15 @@
 </p>
 
 # YT Siphon
-This is a browser extensoin / add-on to redirect YouTube URLs to alternative frontends. 
+### Redirect YouTube URLs to Alternative Frontends Manually
 
-This extension adds the following functionality:
-- If you have a YouTube video page opened and press `Alt+J` (can be changed in your browser settings), it opens the video page in the configured frontend.
-- If you're browsing YouTube and you `Shift+Click` on a video, it opens the video page in the configured frontend in a new tab.
+**YT Siphon** is a browser extension that lets you choose to open YouTube videos in alternative frontends. Instead of auto-redirecting, it gives you the power to decide with simple shortcuts.
+**Key Features**:
+- **`Alt+J`**: Open the current YouTube video in your chosen frontend.
+  - *Tip*: You can customize this shortcut in your browser settings.
+- **`Shift+Click`**: While on YouTube, use this to open a video (by clicking on thumbnails / links) in the configured frontend in a new tab.
+
+Perfect for those who like to browse the YouTube homepage and selectively watch videos on alternative frontends. Also handy if someone shares a YouTube link with you and you prefer watching it on a different frontend.
 
 ## Motivation
 YouTube started cracking down on Ad Blocker usage, so this is my workaround.
