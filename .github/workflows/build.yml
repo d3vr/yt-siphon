@@ -30,4 +30,5 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ${{ steps.web-ext-build.outputs.target }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: artifacts/target.xpi
