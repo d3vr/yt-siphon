@@ -19,7 +19,7 @@ YouTube started cracking down on Ad Blocker usage, so this is my workaround.
 ## Installation
 
 ### Mozilla Add-Ons site
-[Get the add-on from addons.mozilla.org]()
+[Get the add-on from addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/yt-siphon/)
 
 ### Manual
 1. Download the `.xpi` addon file from the [Releases page](https://github.com/d3vr/yt-siphon/releases/)
