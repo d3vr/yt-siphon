@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YT Siphon",
-  "version": "1.0",
+  "version": "1.0.5",
   "description": "Redirect YouTube URLs to alternative frontends",
   "icons": {
     "512": "icons/logo.png"
@@ -46,7 +46,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "ytsiphon@f3.al",
-      "strict_min_version": "42.0"
+      "strict_min_version": "109.0"
     }
   },
   "host_permissions": [
