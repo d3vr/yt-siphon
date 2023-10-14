@@ -1,9 +1,8 @@
-name: "Build"
-on:
+name: "Build and Release"
+on: 
   push:
-    branches:
-      - main
-  pull_request:
+    tags:
+    - '*'
 
 jobs:
   build:
@@ -27,3 +26,8 @@ jobs:
         with:
           name: target.xpi
           path: ${{ steps.web-ext-build.outputs.target }}
+
+      - name: "Create a Release"
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "target.xpi"
