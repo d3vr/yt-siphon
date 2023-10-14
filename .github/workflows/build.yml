@@ -27,7 +27,7 @@ jobs:
           name: target.xpi
           path: ${{ steps.web-ext-build.outputs.target }}
 
-      - name: "Create a Release"
-        uses: ncipollo/release-action@v1
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          artifacts: ${{ steps.web-ext-build.outputs.target }}
+          files: ${{ steps.web-ext-build.outputs.target }}
