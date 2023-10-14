@@ -30,4 +30,4 @@ jobs:
       - name: "Create a Release"
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "target.xpi"
+          artifacts: ${{ steps.web-ext-build.outputs.target }}
