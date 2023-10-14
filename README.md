@@ -1,4 +1,6 @@
-![Logo](icons/logo.png)
+<p align="center">
+  <img width="460" src="src/icons/logo.png" alt="YT Siphon Logo">
+</p>
 
 # YT Siphon
 This is a browser extensoin / add-on to redirect YouTube URLs to alternative frontends. The default configured alternative frontend is `piped.video` by you can easily change this by clicking on the extension's icon which opens the options page and there you can change the default frontend.
@@ -11,8 +13,8 @@ This extension adds the following functionality:
 YouTube started cracking down on Ad Blocker usage, so this is my workaround.
 
 ![Ad Blocker Not Allowed](screenshots/adblocker-notallowed.jpg)
-![Ad Blocker TOS](screenshots/adblocker-tos.jpg)
-![Ad Blocker Counter](screenshots/adblocker-counter.jpg)
+![Ad Blocker TOS](screenshots/adblocker-tos.png)
+![Ad Blocker Counter](screenshots/adblocker-counter.png)
 
 ## Installation
 1. Download the `.xpi` addon file from the [Releases page](https://github.com/d3vr/yt-siphon/releases/)
@@ -24,7 +26,7 @@ YouTube started cracking down on Ad Blocker usage, so this is my workaround.
 7. Profit?
 
 ## Credit
-- GPT-4 and Phind helped a lot while creating this add-on.
+- GPT-4 and [Phind](https://www.phind.com/) helped a lot while creating this add-on.
 - DALL-E 3 created the logo / icon.
 
 ## License
