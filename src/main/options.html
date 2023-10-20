@@ -9,6 +9,13 @@
 <body>
     <label for="frontendUrl">Alternative Frontend URL:</label>
     <input type="text" id="frontendUrl" value="piped.video">
+    <br>
+    <label for="autoRedirect">Auto Redirect Wait (milliseconds) (negative to disable):</label>
+    <input type="number" id="autoRedirect" value="-1">
+    <br>
+    <label for="redirectMain">Redirect main page from Alternative to YouTube?</label>
+    <input type="checkbox" id="redirectMain">
+    <br>
     <button id="save">Save</button>
 
     <script src="options.js"></script>

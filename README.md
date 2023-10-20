@@ -46,6 +46,14 @@ YouTube started cracking down on Ad Blocker usage, so this is my workaround.
 
 You can change the default configured alternative frontend (`piped.video`) from the options page. You can click the extension's icon to access the options page.
 
+### Additional Settings
+This repo is a fork of the original yt-siphon. It added some extra configurations.
+- Auto Redirect Wait (milliseconds): If set to a value larger than 0, the extension will check for URL change. If the URL is a YouTube watch page, it automatically redirects to the alternative frontend.
+  - Lower value (~10): The page will redirect faster. Good if you don't want YouTube to store your watch history.
+  - Higher value (~500): The page will redirect slower. Good if you want to save your watch history on YouTube.
+- Redirect Main Page: If checked, when going to the main page of the alternative frontend, it will redirect you back to YouTube.
+  - To make this functional, you will need to repeat the [Configuration](#configuration) section on your alternative frontend's page.
+
 ## Credit
 - GPT-4 and [Phind](https://www.phind.com/) helped a lot while creating this add-on.
 - DALL-E 3 created the logo / icon.
