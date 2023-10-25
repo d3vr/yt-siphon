@@ -1,4 +1,5 @@
 const YOUTUBE_HOSTNAME = 'www.youtube.com';
+const YOUTUBE_NOCOOKIE = 'youtube-nocookie.com';
 const DEFAULT_FRONTEND_URL = 'piped.video';
 
 
@@ -24,7 +25,13 @@ chrome.commands.onCommand.addListener(function(command) {
         chrome.storage.sync.get(['frontendUrl'], function(data) {
           let frontend = data.frontendUrl;
           console.log(frontend);
-          let newUrl = tab.url.replace(YOUTUBE_HOSTNAME, frontend);
+          let newUrl;
+          if (frontend === YOUTUBE_NOCOOKIE) {
+            newUrl = tab.url.replace(YOUTUBE_HOSTNAME + '/watch?v=', YOUTUBE_NOCOOKIE + '/embed/');
+          } else {
+            newUrl = tab.url.replace(YOUTUBE_HOSTNAME, frontend);
+          }
+          // let newUrl = tab.url.replace(YOUTUBE_HOSTNAME, frontend);
           chrome.tabs.update(tab.id, { url: newUrl });
         });
       }
